@@ -33,7 +33,11 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         <h2>Has accedido como <?php echo $str = strtoupper($username) ?></h2>
     </div>
     <div class="table-product">
+<<<<<<< HEAD
         <table>
+=======
+        <table  >
+>>>>>>> 72c8c35ee4d5e531642ff9613ce5c967016d3cc5
             <tr>
                 <th scope="col">Orden</th>
                 <th scope="col">ID:Lenguaje</th>
@@ -43,7 +47,11 @@ $query = mysqli_query($conn, $sql_fetch_todos);
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>
+<<<<<<< HEAD
             <tbody>
+=======
+            <tbody id="datos">
+>>>>>>> 72c8c35ee4d5e531642ff9613ce5c967016d3cc5
                 <?php
                 $idpro = 1;
                 while ($row = mysqli_fetch_array($query)) { ?>
@@ -68,11 +76,30 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         <br>
         <div class="bottom-button">
             <a name="" id="" class="Addlist"  href="addlist.php" role="button">Agregar Producto</a>
+<<<<<<< HEAD
+=======
+            <!-- <button class="Addlist" id="graficar">Graficar</button> -->
+            <a class="Addlist" id="graficar" role="button">Graficar</a>
+>>>>>>> 72c8c35ee4d5e531642ff9613ce5c967016d3cc5
         </div>
     </div>
     <?php
     mysqli_close($conn);
     ?>
+<<<<<<< HEAD
 </body>
 
 </html>
+=======
+    
+        <div class="chart">
+            <canvas id="circlechart" width="640" height="480"></canvas>
+        </div>
+</body>
+<<<<<<<< HEAD:list.html
+</html>
+========
+<script src="index.js" type="module"></script>
+</html>
+>>>>>>>> 72c8c35ee4d5e531642ff9613ce5c967016d3cc5:list.php
+>>>>>>> 72c8c35ee4d5e531642ff9613ce5c967016d3cc5
