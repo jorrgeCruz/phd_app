@@ -33,7 +33,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         <h2>Has accedido como <?php echo $str = strtoupper($username) ?></h2>
     </div>
     <div class="table-product">
-        <table>
+        <table  >
             <tr>
                 <th scope="col">Orden</th>
                 <th scope="col">ID:Lenguaje</th>
@@ -43,7 +43,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
                 <th scope="col">Editar</th>
                 <th scope="col">Eliminar</th>
             </tr>
-            <tbody>
+            <tbody id="datos">
                 <?php
                 $idpro = 1;
                 while ($row = mysqli_fetch_array($query)) { ?>
@@ -68,11 +68,17 @@ $query = mysqli_query($conn, $sql_fetch_todos);
         <br>
         <div class="bottom-button">
             <a name="" id="" class="Addlist"  href="addlist.php" role="button">Agregar Producto</a>
+            <!-- <button class="Addlist" id="graficar">Graficar</button> -->
+            <a class="Addlist" id="graficar" role="button">Graficar</a>
         </div>
     </div>
     <?php
     mysqli_close($conn);
     ?>
+    
+        <div class="chart">
+            <canvas id="circlechart" width="640" height="480"></canvas>
+        </div>
 </body>
-
+<script src="index.js" type="module"></script>
 </html>
