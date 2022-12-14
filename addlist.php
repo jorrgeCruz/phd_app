@@ -14,7 +14,7 @@ $query = mysqli_query($conn, $sql_fetch_todos);
 <html lang="en">
 
 <head>
-    <title>Agregar Producto</title>
+    <title>Agregar Lenguaje</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,14 +22,13 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/addlist.css">
 </head>
-
 <body>
     <div class="header">
-        <p>ConfiguroWeb</p>
+        <h3>Unisur - Doctorado en Sistemas Computacionales</h3>
         <a name="" id="" class="button-logout" href="logout.php" role="button">Cerrar Sesión</a>
     </div>
     <div class="container">
-        <h1>Agregar Producto</h1>
+        <h1>Agregar Lenguaje</h1>
         <h2>Has accedido como <?php echo $str = strtoupper($username) ?></h2>
     </div>
     <div class="table-product">
