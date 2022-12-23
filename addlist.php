@@ -18,7 +18,6 @@ $query = mysqli_query($conn, $sql_fetch_todos);
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="faviconconfiguroweb.png">
     <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/addlist.css">
 </head>
