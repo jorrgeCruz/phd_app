@@ -12,13 +12,13 @@
     $query_delete = mysqli_query($conn,$sql_delete);
     $row = mysqli_fetch_assoc($query_delete,MYSQLI_ASSOC);
     if(!$row){
-        echo "<script>alert('Eliminación de Producto Exitosa')</script>";        
+        echo "<script>alert('Eliminación de Lenguaje Exitosa')</script>";        
         header("Refresh: 0 , url = ../list.php");
         exit();
 
     }
     else{
-        echo "<script>alert('No se pudo eliminar producto')</script>";
+        echo "<script>alert('No se pudo eliminar lenguaje')</script>";
         header("Refresh: 0 , url = ../list.php");
         exit();
 
