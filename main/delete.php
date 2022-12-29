@@ -5,14 +5,13 @@
         echo "<script>alert('Favor ingresar con tus credenciales')</script>";
         header("Refresh:0 , url = ../index.html");
         exit();
-
     }
     $delete_num = $_GET['id'];
     $sql_delete =  "DELETE FROM product WHERE id = '$delete_num'";
     $query_delete = mysqli_query($conn,$sql_delete);
     $row = mysqli_fetch_assoc($query_delete,MYSQLI_ASSOC);
     if(!$row){
-        echo "<script>alert('Eliminación de Lenguaje Exitosa')</script>";        
+        echo "<script>alert('Eliminación de Lenguaje Exitoso')</script>";        
         header("Refresh: 0 , url = ../list.php");
         exit();
 
